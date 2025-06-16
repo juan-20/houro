@@ -1,0 +1,20 @@
+meta {
+  name: delete time
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/api/times.delete
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer YOUR_AUTH_TOKEN
+}
+
+body:json {
+  { "id": "TIME_ENTRY_ID" }
+}

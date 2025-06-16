@@ -1,0 +1,26 @@
+meta {
+  name: get category
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3000/api/category.getByUser?input={"userId":"wnvGliSH6NFoTG5aLDiKqCtZqoyIN1ms"}
+  body: none
+  auth: none
+}
+
+params:query {
+  input: {"userId":"wnvGliSH6NFoTG5aLDiKqCtZqoyIN1ms"}
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer sE0XldTW4npKMP8dJ6y6Vzi8ai1cDFt7
+}
+
+body:json {
+  {
+    "userId": "wnvGliSH6NFoTG5aLDiKqCtZqoyIN1ms"
+  }
+}

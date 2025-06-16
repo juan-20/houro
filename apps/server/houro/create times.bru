@@ -1,0 +1,20 @@
+meta {
+  name: create times
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/times.create
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  { 
+     "time": "12:00", "wasSpecial": false, "dayCreated": "2025-06-15", "userId": "wnvGliSH6NFoTG5aLDiKqCtZqoyIN1ms", "message": "Optional message" } 
+}

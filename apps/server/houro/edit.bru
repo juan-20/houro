@@ -1,0 +1,23 @@
+meta {
+  name: edit
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/api/times.edit
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer sE0XldTW4npKMP8dJ6y6Vzi8ai1cDFt7
+}
+
+body:json {
+  {
+        "id": "fd5c83e7-7fa7-45ce-95df-0defa92f6ed8",
+        "time": "10:00:00",
+        "wasSpecial": false
+  }
+}

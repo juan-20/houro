@@ -1,0 +1,26 @@
+meta {
+  name: get times by user
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:3000/api/times.getByUser?input={"userId":"wnvGliSH6NFoTG5aLDiKqCtZqoyIN1ms"}
+  body: json
+  auth: none
+}
+
+params:query {
+  input: {"userId":"wnvGliSH6NFoTG5aLDiKqCtZqoyIN1ms"}
+}
+
+headers {
+  Content-Type: application/json
+  authorization: Bearer sE0XldTW4npKMP8dJ6y6Vzi8ai1cDFt7
+}
+
+body:json {
+  {
+    "userId": "wnvGliSH6NFoTG5aLDiKqCtZqoyIN1ms"
+  }
+}
