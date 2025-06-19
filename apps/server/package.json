@@ -14,16 +14,18 @@
     "db:migrate": "drizzle-kit migrate"
   },
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "zod": "^3.25.16",
-    "@trpc/server": "^11.0.0",
-    "@trpc/client": "^11.0.0",
+    "@better-auth/expo": "^1.2.9",
     "@hono/trpc-server": "^0.3.4",
-    "hono": "^4.7.6",
-    "drizzle-orm": "^0.38.4",
-    "pg": "^8.14.1",
+    "@polar-sh/better-auth": "^1.0.1",
+    "@polar-sh/sdk": "^0.34.2",
+    "@trpc/client": "^11.0.0",
+    "@trpc/server": "^11.0.0",
     "better-auth": "^1.2.9",
-    "@better-auth/expo": "^1.2.9"
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.38.4",
+    "hono": "^4.7.6",
+    "pg": "^8.14.1",
+    "zod": "^3.25.16"
   },
   "trustedDependencies": [
     "supabase"

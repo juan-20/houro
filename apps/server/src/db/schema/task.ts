@@ -2,7 +2,7 @@ import { pgTable, text, boolean, serial, date, time, integer, varchar } from "dr
 import { user } from "./auth";
 import { category } from "./categories";
 
-export const times = pgTable("times", {
+export const task = pgTable("task", {
   id: text("id").primaryKey(),
   createdAt: date("created_at").notNull(),
   updatedAt: date("updated_at").notNull(),

@@ -1,11 +1,11 @@
 meta {
-  name: get times by user
+  name: get tasks recents
   type: http
   seq: 5
 }
 
 get {
-  url: http://localhost:3000/api/times.getByUser?input={"userId":"wnvGliSH6NFoTG5aLDiKqCtZqoyIN1ms"}
+  url: http://localhost:3000/api/times.getRecentTasks?input={"userId":"wnvGliSH6NFoTG5aLDiKqCtZqoyIN1ms"}
   body: json
   auth: none
 }

@@ -3,7 +3,7 @@ import {
   router,
 } from "../lib/trpc";
 import { categoriesRouter } from "./categories";
-import { timesRouter } from "./times";
+import { taskRouter } from "./task";
 
 export const appRouter = router({
   healthCheck: publicProcedure.query(() => {
@@ -15,7 +15,7 @@ export const appRouter = router({
       user: ctx.session.session?.userId || null,
     };
   }),
-  times: timesRouter,
+  times: taskRouter,
   category: categoriesRouter,
 });
 export type AppRouter = typeof appRouter;
