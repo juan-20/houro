@@ -21,7 +21,14 @@
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"
+		"indentStyle": "tab",
+		"lineWidth": 120,
+		"quoteStyle": "double",
+		"trailingComma": "all",
+		"bracketSpacing": true,
+		"jsxBracketSameLine": false,
+		"jsxSingleQuote": false,
+		"singleAttributePerLine": true
 	},
 	"organizeImports": {
 		"enabled": true
